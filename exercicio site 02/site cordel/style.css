@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Xanh Mono', monospace;
+    min-height: 100vh;
+    background-color: lightgrey;
+}
+header{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 5vh;
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+header > p{
+    padding-bottom: 50px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    color: blueviolet;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 4vh;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+   background-color: purple;
+   color: white;
+}
+section.imagem> p{
+    background-color: rgba(100, 2, 100, 0.425);
+    display: inline-block;
+    padding: 20px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
