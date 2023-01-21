@@ -9,7 +9,7 @@ body{
 }
 header{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: black;
+    background-color: rgb(67, 26, 75);
     color: white;
     text-align: center;
     font-size: 5vh;
@@ -43,11 +43,25 @@ section.normal{
 section.imagem{
    background-color: purple;
    color: white;
+   box-shadow: inset 6px 6px 9px 0px rgba(128, 99, 128, 0.658);
+   background-size: cover;
 }
 section.imagem> p{
-    background-color: rgba(100, 2, 100, 0.425);
+    background-color: rgba(100, 2, 100, 0.623);
     display: inline-block;
     padding: 20px;
+    text-shadow: 2px 2px 0px rgb(100, 2, 100);
+}
+section#img01{
+    background-image: url(imagens/download\ \(12\).jfif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section#img02{
+    background-image: url(imagens/download\ \(8\).jfif);
+    background-position: top center;
+    background-attachment: fixed;
 }
 footer{
     background-color: black;
