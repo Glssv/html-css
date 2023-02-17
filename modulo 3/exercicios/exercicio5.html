@@ -10,44 +10,97 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
-            width: 400px;
-            height: 200px;
+            width: 500px;
             border-collapse: collapse;
         }
-        td{
-            border: 1px solid black;
-            padding: 3px;
-            text-align: center;
-            vertical-align: middle;
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: rgb(90, 175, 5);
+            padding: 10px;
         }
-        .numero{
+        th, td{
+            border: 1px solid black;
+            text-align: center;
+        }
+        thead,tfoot{
+            background-color: lawngreen;
+            color: rgb(5, 56, 5);
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightcoral
+        }
+        td.num{
             text-align: right;
         }
     </style>
 </head>
 <body>
-    <h1>Minha primeira tabela</h1>
+    <h1>uso de tabelas grandes</h1>
     <table>
-        <tr>
-            <td>a1</td>
-            <td>b1</td>
-            <td>c1</td>
-        </tr>
-        <tr>
-            <td>A2</td>
-            <td >b2</td>
-            <td class="numero">400</td>
-        </tr>
-        <tr>
-            <td>a3</td>
-            <td>b3</td>
-            <td>c3</td>
-        </tr>
-        <tr>
-            <td>a4</td>
-            <td>b4</td>
-            <td>c4</td>
-        </tr>
+        <caption>População das Unidades Federaivas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">população</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class"num">49 295 747</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class"num">49 295 747</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class"num">23 601 254</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class"num"> 17 296 239</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class"num">11 654 092</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class"num">11 649 359</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class"num">11 293 956</td>
+            </tr>
+            <tr>
+                <td>Belém</td>
+                <td class"num">9 335 660</td>
+            </tr>
+            <tr>
+                <td>Góias</td>
+                <td class"num">8 269 552</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class"num">8 269 552</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class"num">4 490 260</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class"num">4 468 927</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">total de abitantes </th>
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
